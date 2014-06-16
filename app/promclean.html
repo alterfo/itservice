@@ -1,0 +1,148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Абонентское обслуживание организаций, ИТ-аутсорсинг</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body>
+  <div id="shadow"></div>
+  <div id="sertificates_form">  
+  </div>
+  <form id="orderForm" action='/sendmail.php'>
+    <fieldset>
+	  <label for="fio">ФИО</label> <input type="text" class="text_field" id='fio' name="order[fio]" />
+	</fieldset>
+	<fieldset>
+	  <label for="phone">Телефон</label> <input id="phone" class="text_field" type="text" name="order[phone]" />
+	</fieldset>
+	<fieldset>
+	  <label for="comment">Комментарий</label> <textarea id="comment"  class="text_field" name="order[comment]"></textarea>
+	</fieldset>
+	<fieldset>
+	  <input type="button" value="отправить" onclick='sendOrderForm()'/> <input onclick='closeOrderForm()' type="button" value="отмена"/>
+	</fieldset>
+  </form>
+  <div id="site">
+    <div id="header">
+	  <a href="index.html"><img src="i/logo2.png" alt="" id="logo" /></a>
+	  <div class="contact"> 
+	    <font size=5><span style="color: #808080;">+7 (987)</span><span style="color: #cc0000;"> 235-70-23</span></font><br/>Ежедневно с 8:00 до 20:00 в Казани.<br /> В выходные дешевле.<br/>
+		<a class="orderBtn"  onclick="orderFormShow('');return false">Заказать звонок</a>
+	  </div>
+	  <ul id="certificates">
+	    <li><img src="i/cert1.jpg"></a></li>
+		<li><img src="i/cert2.jpg"></a></li>
+		<li><img src="i/cert3.jpg"></a></li>
+	  </ul>
+	  <ul id="mainMenu">
+	    <li><a href="about.html">О Нас</a></li>
+		<li class="separator">&nbsp;</li>
+		<li><a href="index.html">Услуги</a></li>
+		<li class="separator">&nbsp;</li>
+		<li><a href="contact.html">Контакты</a></li>
+	  </ul>
+	  <ul id="services_menu">
+	    <li><a href="index.html">Скорая компьютерная помощь</a></li>
+		<li class="separator">&nbsp;</li>
+		<li><a href="office.html">Абонентское обслуживание огранизаций</a></li>
+		<li class="separator">&nbsp;</li>
+		<li><strong>Аудит и консультация</strong></li>
+		<li class="separator">&nbsp;</li>
+	</ul>
+	  <ul id="actions">
+	    <li><img src="i/action1.jpg" alt="" /><h3>100% Гарантия качества!</h3><p>Вы платите деньги только за результат! </p></li>
+		<li><img src="i/freemonth.png" alt="" /><h3>Профилактика со скидкой в 30%!</h3><p>До окончания акции осталось:<br/><b id="last_day_timer"></b></p></li>
+		<li><img src="i/cmsbonus.png" alt="" /><h3>Скидка на чистку Windows!</h3><p>Закажи генеральную уборку, и получи скидку 15%!</p></li>
+	  </ul>
+	</div>
+	<div id="content">
+	  <div id="rightContent">
+	    <h3 class="recallsTitle">Отзывы</h3>
+	    <ul class="recalls">
+		  <li><strong>Кристина</strong>Пропал доступ к диску D, а там важные данные. Мастер подключился ко мне через интернет и 9 часов восстанавливал данные. Очень понравилась оперативность, что не нужно было ждать выезда ко мне. Взяли всего 500 руб. Рекомендовала своим знакомым и на следующий день он поехал к ним. Возможно буду покупать через вас новый компьютер. Спасибо, что помогли!</li>
+		  <li><strong>Александр Захаренко</strong>Приехал очень толковый молодой человек и организовал нам домашнюю локальную сеть Wi-Fi. Одновременно помог собрать второй компьютер и выбрать дочери ноутбук. Теперь в семье у каждого по компьютеру и свой собственный выход в Интернет. Спасибо огромное за высокое мастерство и специальные знания.</li>
+		  <li><strong>Наталья Сорокина</strong>Возник какой-то ужасный, идиотский порно баннер, который не просто портил мне настроение и вид рабочего стола, но еще и блокировал мышь, меню, вообщем все.
+Ровно в назначенное время ко мне приехал приятный молодой человек  и легко и незанудно все починил. Кроме того, он удалил лишние ненужные программы, поставил антивирусник и кучу еще всего того полезного, благодаря чему все отлично работает.
+Наверно стоило бы сказать порно баннеру спасибо, - ведь все стало лучше, чем было.</li>
+		  <li><strong>Андрей Мельников</strong>Долгое время наш компутер издевался над нами - то зависнет на 20-30 минут, то самостоятельно закроет все окошки и сам отключится или вообще не реагировал на наши скромные желания выйти в интернет. После того, как к нам приехал мастер и переустановил программу, наш компьютер просто не узнать. Делает все быстро и без всяких уговоров!!!</li> 
+		
+		</ul>
+	  </div>
+	
+	  <div id="leftContent">
+	    <h1>Консультация и аудит:</h1>
+	    <ul id="servises">
+		 
+			<li>
+				<h2><a href="index.html">Консультация по информационной безопасности</a></h2>
+			
+				<span class="realPrice">От 1000 р.</span>
+				
+				<a href="index.html"><img src="i/srv/legal.gif" alt="" /></a>
+				
+				<a class="orderBtn" href="index.html#" onclick="orderFormShow('Чистка железа');return false">ЗАКАЗАТЬ</a>
+				
+			</li>
+			
+		  <li>
+			<h2><a href="index.html">Защита персональных данных</a></h2>
+			
+			<span class="realPrice">От 1000р</span>
+			
+			<a href="index.html"><img src="i/srv/pd.jpg" alt="" /></a>
+			
+			<a class="orderBtn" href="index.html#" onclick="orderFormShow('Ускорение работы системы');return false">ЗАКАЗАТЬ</a>
+		</li>
+		
+		  <li>
+			<h2><a href="index.html">Обучение работе на компьютере</a></h2>
+			
+			<span class="realPrice">Цена договорная</span>
+			
+			<a href="index.html"><img src="i/srv/gr.jpg" alt="" /></a>
+			
+			<a class="orderBtn" href="index.html#" onclick="orderFormShow('Диагностика неисправностей и восстановление работоспособности');return false">ЗАКАЗАТЬ</a>
+		</li>
+		
+		  <li>
+		  
+			<h2><a href="index.html">Технологический аудит ит-систем</a></h2>
+			
+			<span class="realPrice">От 3000 р.</span>
+			
+			<a href="index.html"><img src="i/srv/audit.jpg" alt="" /></a>
+			
+			<a class="orderBtn" href="index.html#" onclick="orderFormShow('Организация беспроводной локальной сети');return false">ЗАКАЗАТЬ</a>
+		</li>
+
+		</ul>
+			  </div>
+<div class="clear"></div>
+	</div>
+	<div id="footer">
+	  <p class="copyrights">&copy; Директ-Хэндс <br/> 
+	  <p class="phones">+7 (987) 235-70-23<br/><a href="mailto:tlt.comp@gmail.com">tlt.comp@gmail.com</a></p>
+
+	  
+	  
+	</div>
+
+  </div><!-- Yandex.Metrika counter -->
+<div style="display:none;"><script type="text/javascript">
+(function(w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter9277042 = new Ya.Metrika({id:9277042, enableAll: true});
+        }
+        catch(e) { }
+    });
+})(window, "yandex_metrika_callbacks");
+</script></div>
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+<noscript><div><img src="//mc.yandex.ru/watch/9277042" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

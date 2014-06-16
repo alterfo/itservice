@@ -1,0 +1,61 @@
+body{margin:0;padding:0;font-size:12px;font-family:Tahoma;background:#F5F5F5;color:#333;text-align:center}
+.clear{margin:0;padding:0;width:100%;height:1px;line-height:1px;display:inline-block;font-size:1px;clear:both}
+a{color:#3B5468;text-decoration:underline}
+a img{border:0;}
+#site{width:1000px;margin:30px auto 0;text-align:left;}
+#header{height:300px;position:relative;}
+  #logo{left:0px; top:35px;}
+  #mainMenu,#services_menu{position:absolute;left:0;top:-10px;margin:0;padding:0;list-style:none;}
+    #mainMenu li,#services_menu li{float:left;font-size:14px;margin:0px;/*text-transform:uppercase*/}
+	#mainMenu li.separator,#services_menu li.separator{margin:0 10px;width:2px}
+  #services_menu{bottom:13px;top:auto;}
+  #header .contact{position:absolute;right:20px;font-size:16px;text-align:right;top:20px;}
+    #header .contact a{font-size:12px;}
+	#header .contact a.orderBtn{font-size:14px;line-height:30px;text-transform:uppercase;margin-top:20px;}
+	#header #actions{list-style:none;margin:0;padding:0;position:absolute;bottom:55px;left:0;border:2px solid #666666;-moz-border-radius:5px;border-radius:5px;webkit-border-radius:5px;background:white;width:1000px;}
+	  #header #actions li{width:180px;
+	  //width:30%;
+	  float:left;padding-left:120px;position:relative;margin-left:28px;height:100px;}
+	    #header #actions li img{position:absolute;left:0;top:7px}
+		#header #actions li p{height:27px;overflow:hidden;line-height:14px;}
+		#header #actions li h3{margin-bottom:10px;font-size:14px;}
+  #certificates{position:absolute;list-style:none;margin:0;padding:0;left:345px;top:20px;}
+    #certificates li{float:left;margin-right:5px;} 
+#footer{background:#E9EDF1;height:100px;position:relative;}
+  .copyrights{position:absolute;left:10px;top:20px}
+  .phones{right:10px;top:15px;font-size:16px;position:absolute;text-align:right}
+    .phones a{font-size:12px;}
+#content{padding:0 0 10px 0;}
+	#rightContent{width:250px;float:right;}
+	#leftContent{margin:0 260px 0 0;}
+	.recalls{margin:0;padding:0;list-style:none;}
+	  .recalls li{margin:0 0 10px 0;}
+		.recalls li strong{display:block;margin:0 0px 5px 0}
+	#servises{margin:0;padding:0;list-style:none;margin-right:-20px}
+	  #servises li{border:2px #666 solid;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;width:230px;margin:0 16px 10px 0;float:left;text-align:center;height:265px;overflow:hidden;padding:6px 0 6px 0;position:relative;}
+	    #servises li h2{font-size:14px;}
+		  #servises li h2 a{text-decoration:none}
+		  #servises li h2 a:hover{text-decoration:underline}
+		#servises li p{height:30px;margin:7px 0 0;overflow:hidden;position:absolute;bottom:5px;left:0}
+		#servises li img{position:absolute;left:5px;z-index:1}
+		#servises li .orderBtn{position:absolute;left:50%;bottom:10px;margin-left:-33px;} 
+        #servises li .oldPrice{font-weight:bold;position:absolute;background:#55c5d1;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;padding:0;display:inline-block;line-height:20px;right:20px;bottom:60px;z-index:2;padding:0 5px;text-decoration:line-through}
+		#servises li .realPrice{position:absolute;background:#cce569;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;padding:0;display:inline-block;line-height:20px;right:20px;bottom:40px;z-index:2;padding:0 5px;}
+h1,h3.recallsTitle{font-size:16px;line-height:16px;margin:0 0 12px 0;}		
+.text{padding:10px 6px;border:1px #333 solid;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:0 0 15px 0}
+  .text p{margin-top:0;}
+#sitemap{margin:6px 0 0 0;padding:0;list-style:none}  
+  #sitemap li{margin:0 0px 5px;}
+    #sitemap li ul{margin:5px 0 5px 10px;padding:0;list-style:none;font-weight:lighter}
+	  #sitemap li ul li a{font-weight:lighter!important}
+  #sitemap li.active a{font-weight:bold;text-decoration:none}
+  #sitemap li a:hover{text-decoration:none}
+.orderBtn{line-height:22px;background:#3B5468;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;color:white;padding:0 10px;text-decoration:none;display:inline-block;cursor:pointer}  
+#shadow{opacity:0.8;-moz-opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);position:absolute;left:0;top:0;width:100%;height:100%;background:#000;z-index:10;display:none}
+#orderForm{position:absolute;left:50%;width:360px;padding:20px;background:white;margin-left:-200px;z-index:11;display:none}
+  #orderForm fieldset{margin:0 0 5px 95px;padding:0 0 0 0px;border:0;position:relative;text-align:left;border:0px solid;}
+    #orderForm fieldset label{position:absolute;right:270px;font-weight:bold;top:4px;}
+    #orderForm fieldset .text_field{width:265px}
+#sertificates_form{position:absolute;left:50%;padding:20px;width:482px;margin-left:-260px;z-index:11;display:none;background:white}	
+  #sertificates_form a{position:absolute;right:10px;top:10px;}
+#last_day_timer{display:block;text-align:center}  
