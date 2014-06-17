@@ -1,21 +1,5 @@
 ﻿// JavaScript Document
 
-(function($) {
-	$(document).ready(function() {
-	  $('#shadow').css('height',$(document).height())
-	  $('#sertificates_form')
-	  $('#certificates a').live('click',function(){
-	    $('#sertificates_form').html('<img src="'+$(this).attr('href')+'" alt=""/><a href="#">закрыть</a>');
-		$('#shadow').show();
-		$('#sertificates_form').show();
-		vertical_centering($('#sertificates_form'));
-	    return false;
-	  })
-	  $('#sertificates_form a').live('click',function(){$('#sertificates_form,#shadow').hide();return false;})
-	  $('#shadow').live('click',function(){$('#sertificates_form,#shadow,#orderForm').hide();})
-	  setTimeout(lastdaytimer,1000)
-	})
-})(jQuery);
 
 DEBUG = 1;
 
